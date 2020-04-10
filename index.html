@@ -108,6 +108,68 @@
             </div>
         </div>
 
+        <!-- RESUME -->
+        <div id="resume" class="collapse">
+            <div class="card card-body bg-success text-white py-5">
+                <h2>My Resume</h2>
+                <p>wejhfiwe iuhr huw rhjf rwegr hwkhm huweru uwer rygweg </p>
+            </div>
+            <div class="card card-body py-5">
+                <h3>Where Have I Worked?</h3>
+                <p>if werhw wrg jyrggara eyefkhfikaehrkw h4htkehtrkh 
+                        ihikfwjhek fuye 4gte ug4 hwerhefbj</p>
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">DEVMASTERS</h4>
+                            <p class="card-text">ihfiweh reh8ohrow hw38hiw h48hiuehro whtrik</p>
+                            <p class="p-2 bg-dark mb-3 text-white">
+                                position: Web developer
+                            </p>
+                            <p class="p-2 bg-dark mb-3 text-white">
+                                phone: (444) 444-444
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Date: 2015-2017</h6>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">DESIGN PROS</h4>
+                            <p class="card-text">ihfiweh reh8ohrow hw38hiw h48hiuehro whtrik</p>
+                            <p class="p-2 bg-dark mb-3 text-white">
+                                position: Web Designer
+                            </p>
+                            <p class="p-2 bg-dark mb-3 text-white">
+                                phone: (222) 444-555
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Date: 2014-2015</h6>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">NEXT TECHNOLOGY</h4>
+                            <p class="card-text">ihfiweh reh8ohrow hw38hiw h48hiuehro whtrik</p>
+                            <p class="p-2 bg-dark mb-3 text-white">
+                                position: Full Stack Web Developer
+                            </p>
+                            <p class="p-2 bg-dark mb-3 text-white">
+                                phone: (222) 432-344
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Date: 2012-2014</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- FOOTER -->
         <footer id="main-footer" class="p-5 bg-dark text-white">
             <div class="row">
@@ -132,27 +194,9 @@
 
 
     <script>
-        // Get the current year for the copyright
-        $('#year').text(new Date().getFullYear());
-
-        // Init Scrollspy
-        $('body').scrollspy({ target: '#main-nav' });
-
-        // Smooth Scrolling
-        $("#main-nav a").on('click', function (event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-
-                const hash = this.hash;
-
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-
-                    window.location.hash = hash;
-                });
-            }
-        });
+  $('.port-item').click(function () {
+      $('.collapse').collapse('hide');
+    });
     </script>
 </body>
 </html>
