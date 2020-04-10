@@ -6,6 +6,8 @@
     <script src="https://kit.fontawesome.com/3847d8ec40.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+          integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>BOOTSTRAP THEME</title>
 </head>
@@ -47,7 +49,7 @@
 
                         <div class="p-4 bg-black">
                             Experienced Full Stack Web Developer
-                        </div> 
+                        </div>
                         <div>
                             <div class="d-flex flex-row text-white align-items-strech text-center">
                                 <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
@@ -116,8 +118,10 @@
             </div>
             <div class="card card-body py-5">
                 <h3>Where Have I Worked?</h3>
-                <p>if werhw wrg jyrggara eyefkhfikaehrkw h4htkehtrkh 
-                        ihikfwjhek fuye 4gte ug4 hwerhefbj</p>
+                <p>
+                    if werhw wrg jyrggara eyefkhfikaehrkw h4htkehtrkh
+                    ihikfwjhek fuye 4gte ug4 hwerhefbj
+                </p>
                 <div class="card-deck">
                     <div class="card">
                         <div class="card-body">
@@ -170,6 +174,65 @@
             </div>
         </div>
 
+
+        <!-- WORK -->
+        <div id="work" class="collapse">
+            <div class="card card-body bg-warning text-white py-5">
+                <h2>COMPANIES I HAVE WORKED FOR</h2>
+                <p>wejhfiwe iuhr huw rhjf rwegr hwkhm huweru uwer rygweg </p>
+            </div>
+        </div>
+
+        <div class="card card-body">
+            <h3>What Have I Built?</h3>
+            <p>u ghwerweherh wehtetkehfhe rthierbguje4hb kgeyrgweufbe </p>
+            <div class="row no-gutters">
+                <div class="col-lg-3">
+                    <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox">
+                        <img alt="" src="https://unsplash.it/600.jpg?image=252" class="img-fluid" />
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox">
+                        <img alt="" src="https://unsplash.it/600.jpg?image=253" class="img-fluid" />
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox">
+                        <img alt="" src="https://unsplash.it/600.jpg?image=254" class="img-fluid" />
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox">
+                        <img alt="" src="https://unsplash.it/600.jpg?image=255" class="img-fluid" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-lg-3">
+                    <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox">
+                        <img alt="" src="https://unsplash.it/600.jpg?image=256" class="img-fluid" />
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="https://unsplash.it/1200/768.jpg?image=257" data-toggle="lightbox">
+                        <img alt="" src="https://unsplash.it/600.jpg?image=257" class="img-fluid" />
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="https://unsplash.it/1200/768.jpg?image=258" data-toggle="lightbox">
+                        <img alt="" src="https://unsplash.it/600.jpg?image=258" class="img-fluid" />
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="https://unsplash.it/1200/768.jpg?image=259" data-toggle="lightbox">
+                        <img alt="" src="https://unsplash.it/600.jpg?image=259" class="img-fluid" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <!-- FOOTER -->
         <footer id="main-footer" class="p-5 bg-dark text-white">
             <div class="row">
@@ -191,12 +254,18 @@
             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" 
+            integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
 
     <script>
-  $('.port-item').click(function () {
-      $('.collapse').collapse('hide');
-    });
+        $('.port-item').click(function () {
+            $('.collapse').collapse('hide');
+        });
+
+        $(document).on('click', '[data-toggle="lightbox"]', function (e) {
+            e.preventDefault();
+            $(this).ekkoLightbox();
+        });
     </script>
 </body>
 </html>
